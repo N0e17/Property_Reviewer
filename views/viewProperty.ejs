@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Details</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="header">Reliable Source for your Property Needs</div>
+    <h1>Property Details</h1>
+    <img
+          src="<%=property.img%>"
+          alt="An image of <%=property.name%>"
+          class="jumbo-img"
+        />
+  
+       <div class="details"><b>Reviewer Name:</b> <%=property.name%><br/>
+        <b>Property Name:</b> <%=property.propertyName%><br/>
+        <b>Address:</b> <%=property.address%><br/>
+        <b>Amenities:</b> <%=property.amenities%><br/>
+        <b>Price: RM</b> <%=property.price%></div>
+        <p class="review"><b>Review</b><br/><%=property.review%></p>
+        <h7><% if(!property.recommended){ %> Not<%}%> Recommended</h7>
+        <br />
+        <div class="comments"><br /><b class="comment">Comments</b>
+        <%for (i of property.comments) {%> 
+          <p><b><%=i.name%></b><br/><%=i.comments%></p>
+          <%}%>
+          <form
+      class="editform"
+      action="/properties/comment/<%=property.id %>"
+      method="POST"
+    ><b>Name:</b>
+    <input
+      class="textbox"
+      type="text"
+      name="name"
+      value="<%=property.comments.name%>"
+    /><br /><br/>
+<b>Comment:</b>
+<textarea type="text" name="comments" value="<%=property.comments.comments%>"></textarea><br /><br/>
+<input class="button" type="submit" value="ADD COMMENT" />
+        </form>
+        </div>
+        <br />
+        <div class="links"><a href="/properties">Back to Home</a></div>
+    </body>
+  </body>
+</html>

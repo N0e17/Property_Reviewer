@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Add New Property</title>
+  </head>
+  <body>
+    <div class="header">Reliable Source for your Property Needs</div>
+    <h1>Create new property entry</h1>
+    <form class="editform" action="/properties" method="POST">
+      <b>Name:</b> <input class="textbox" type="text" name="name" /><br /><br />
+      <b>Image:</b> <input class="textbox" type="text" name="img" /><br /><br />
+      <b>Property Name:</b>
+      <input class="textbox" type="text" name="propertyName" /><br /><br />
+      <b>Address:</b> <textarea type="text" name="address"></textarea
+      ><br /><br />
+      <b>Amenities:</b>
+      <input class="textbox" type="text" name="amenities" /><br /><br />
+      <b>Price: RM</b>
+      <input class="textbox" type="number" name="price" /><br /><br />
+      <b>Review:</b> <textarea type="text" name="review"></textarea><br /><br />
+      <b>Recommended:</b>
+      <input class="checkbox" type="checkbox" name="recommended" /><br /><br />
+      <input class="button" type="Submit" value="POST REVIEW" />
+    </form>
+    <br />
+    <div class="links"><a href="/properties">Back to Home</a></div>
+  </body>
+</html>

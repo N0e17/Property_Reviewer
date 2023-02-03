@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Property Reviews</title>
+  </head>
+  <body>
+    <div class="header">Reliable Source for your Property Needs</div>
+    <h1>Property Reviews</h1>
+    <div class="main">
+      <br /><% for(let i = 0; i < properties.length; i++){ %>
+      <a href="/properties/<%=properties[i].id %>"
+        ><br /><img
+          src="<%=properties[i].img%>"
+          alt="An image of <%=properties[i].name%>"
+          class="thumbnail"
+        /><br /><%= properties[i].propertyName %> <br />
+        <%= properties[i].address %></a
+      ><br />
+      <form
+        style="display: inline"
+        action="/properties/<%=properties[i].id %>/edit"
+      >
+        <input class="button" type="submit" value="EDIT" />
+      </form>
+      <form
+        style="display: inline"
+        action="/properties/<%=properties[i].id%>?_method=DELETE"
+        method="POST"
+      >
+        <input class="button" type="submit" value="DELETE" />
+      </form>
+      <br />
+
+      <% } %>
+    </div>
+    <br />
+    <div class="links"><a href="/properties/new">Post a Review</a></div>
+  </body>
+</html>
