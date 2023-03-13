@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Edit Entry</title>
+  </head>
+  <body>
+    <div class="header">Reliable Source for your Property Needs</div>
+    <h1>Edit Property Entry</h1>
+    <form
+      class="editform"
+      action="/properties/<%=property.id %>?_method=PUT"
+      method="POST"
+    >
+      <b>Name:</b>
+      <input
+        class="textbox"
+        type="text"
+        name="name"
+        value="<%=property.name%>"
+      /><br /><br />
+      <b> Image:</b>
+      <input
+        class="textbox"
+        type="text"
+        name="img"
+        value="<%=property.img%>"
+      /><br /><br />
+      <b>Property Name (If Applicable):</b>
+      <input
+        class="textbox"
+        type="text"
+        name="propertyName"
+        value="<%=property.propertyName%>"
+      /><br /><br />
+      <b>Address:</b>
+      <textarea type="text" name="address" value="<%=property.address%>">
+<%=property.address%>
+      </textarea
+      ><br /><br />
+      <b>Amenities:</b>
+      <input
+        class="textbox"
+        type="text"
+        name="amenities"
+        value="<%=property.amenities%>"
+      /><br /><br />
+      <b>Price: RM</b>
+      <input
+        class="textbox"
+        type="number"
+        name="price"
+        value="<%=property.price%>"
+      /><br /><br />
+      <b>Review:</b>
+      <textarea type="text" name="review" value="<%=property.review%>">
+<%=property.review%></textarea
+      ><br /><br />
+      <b>Recommended:</b>
+      <input
+        class="checkbox"
+        type="checkbox"
+        name="recommended"
+        <%if
+        (property.recommended)
+        {%>
+      checked <% } %>/>
+      <br /><br /><input class="button" type="submit" value="UPDATE ENTRY" />
+    </form>
+    <br /><br />
+    <div class="links">
+      <a href="/properties">Back to Home</a>
+    </div>
+  </body>
+</html>

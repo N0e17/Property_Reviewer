@@ -1,0 +1,3 @@
+.env
+3009;
+node_modules

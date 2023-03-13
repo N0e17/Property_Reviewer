@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Rye&family=Smokum&display=swap");
+
+body {
+  background: linear-gradient(to bottom, #ffffcc 0%, #ccffff 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 25px;
+  padding: 15px;
+}
+
+h3 {
+  font-size: 25px;
+  padding: 15px;
+}
+
+h4 {
+  font-size: 25px;
+  padding: 15px;
+}
+
+h5 {
+  font-size: 25px;
+  padding: 15px;
+}
+
+h6 {
+  font-size: 25px;
+  padding: 15px;
+}
+
+h7 {
+  font-size: 25px;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.jumbo-img {
+  height: auto;
+  width: 500px;
+  border-radius: 10%;
+  padding: 15px;
+}
+
+.thumbnail {
+  height: auto;
+  width: 150px;
+}
+
+.main {
+  padding: 15px;
+  color: black;
+  margin: 10px;
+  font-size: 35px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  width: 500px;
+}
+
+b {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+a {
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #db0000;
+}
+
+div {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.header {
+  height: 90px;
+  width: auto;
+  background: #fdda0d;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.links {
+  height: 50px;
+  width: auto;
+  background: cyan;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.review {
+  display: block;
+  font-family: "Oswald", sans-serif;
+}
+
+.details {
+  font-family: "Oswald", sans-serif;
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  background-color: #ffb800;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #db0000;
+}
+
+.editform {
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+}
+
+.checkbox {
+  height: 25px;
+  width: 25px;
+}
+
+.textbox {
+  height: 20px;
+  width: 300px;
+}
+
+.comments {
+  font-family: "Oswald", sans-serif;
+  padding: 15px;
+}
+
+.comment {
+  font-size: 30px;
+}
